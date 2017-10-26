@@ -1,0 +1,3 @@
+To call a method it must be written above the point where it was called.
+
+Like the method must be written sequencially before it can be called

@@ -1,0 +1,38 @@
+code is stored in a section of read only memory (in it's own section that 
+is different from the read only section for the variables). and each 
+section of code has it's own unique memory location
+
+when you include the brackets you're telling it to run the code that is 
+stored at that memory location
+
+when you don't include the brakcets you're telling it to get that code, but
+it won't run the code. If you're using it in a cout statemnt where you're 
+calling it as a certain data type, it will give you a value from the 
+memory locationit looked at that fits in the length of that data type
+you are looking for (double for cout statments thus lenght of 8), which 
+would be the memory location! (+ some characters cause memory locations
+are only lenght of 4)
+
+example: 
+
+double method(){
+	return 0;
+}
+
+cout << method<< endl;
+
+output:
+
+012B13ED
+
+//beacuse that is the memory location of the code you didn't run and the
+//location itself is an acceptable value for the statement your using
+
+
+Cool hacking thing:
+
+if you have a function in your program that is looking for an int, the 
+length of a pointer is the same length of an int and thus with older 
+languages you can pass the program an int where it would be lookikng for 
+the pointer to a code and it would crash as it would look for the code in 
+the memory location = int which doesn't exit
