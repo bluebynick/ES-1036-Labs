@@ -1,3 +1,11 @@
-﻿  npaul5_lab04_q1.cpp
+﻿  npaul5_lab04_q2.cpp
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(99): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(119): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(199): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(205): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(207): warning C4244: '=': conversion from 'long double' to 'long', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(220): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(283): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 004\npaul5_lab04_q2.cpp(290): warning C4244: '=': conversion from 'long double' to 'long', possible loss of data
   Lab 004.vcxproj -> C:\Users\USER\Desktop\GitHub\ES-1036-Labs\ES1036Labs\Debug\Lab 004.exe
   Lab 004.vcxproj -> C:\Users\USER\Desktop\GitHub\ES-1036-Labs\ES1036Labs\Debug\Lab 004.pdb (Full PDB)

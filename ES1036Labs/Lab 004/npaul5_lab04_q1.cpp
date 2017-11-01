@@ -23,7 +23,7 @@ Features:
 
 using namespace std;
 
-double celToFaren() { 
+double celToFaren() { //fucntion that converts the given Celsius input into Farenheit and returns the value
 	double input;
 	cout << "\nPlease input a temperature in Celsius:\n";
 	cin >> input;
@@ -33,7 +33,7 @@ double celToFaren() {
 	return input;
 }
 
-double cmToInch() { 
+double cmToInch() { //fucntion that converts the given cm input into inches and returns the value
 	double input;
 	cout << "\nPlease input a length in Cm:\n";
 	cin >> input;
@@ -53,7 +53,7 @@ double mToFeet() { //fucntion that converts the given m input into feet and retu
 	return input;
 }
 
-double kmphToMph() { //fucntion that converts the given m input into feet and returns the value
+double kmphToMph() { //fucntion that converts the given kmph input into mph and returns the value
 	double input;
 	cout << "\nPlease input a speed in Km/h:\n";
 	cin >> input;
@@ -71,29 +71,25 @@ int main() {
 	bool loopEnder = false;
 
 	//introduction
-	cout << "Hi! Welcome to Nick's More Choice Convertor! In this program we will convert \nCelsius into Fahrenheit, Centimeters to Inches, Meters to Feet, or Km/h toMPH. \nYou will be asked for an input at the beginning that will indicate your choice. \nThe options are:\n\n\t1. Celsius to Fahrenheit\n\t2. Centimeters to Inches\n\t3. Meters to Feet\n\t4. Km/h to MPH\n\t5. Exit\n";
+	cout << "Hi! Welcome to Nick's More Choice Convertor! In this program we will convert \nCelsius into Fahrenheit, Centimeters to Inches, Meters to Feet, or Km/h toMPH. \nYou will be asked for an input at the beginning that will indicate your choice.\n";
 
 	do {
 		//program direction
-		cout << "\nInput an integer choice(1-5):\n";
+		cout << "\nInput an integer choice(1-5):\n\nThe options are:\n\n\t1. Celsius to Fahrenheit\n\t2. Centimeters to Inches\n\t3. Meters to Feet\n\t4. Km/h to MPH\n\t5. Exit\n"; 
 		cin >> input;
 
 		switch (input) {
 		case 1: 
 			cout << "You're temperature in Farenheit is " << celToFaren() << endl;
-			loopEnder = true;
 			break;
 		case 2:
 			cout << "You're length in Inches is " << cmToInch() << endl;
-			loopEnder = true;
 			break;
 		case 3:
 			cout << "You're length in Inches is " << mToFeet() << endl;
-			loopEnder = true;
 			break;
 		case 4:
 			cout << "You're speed in MPH is " << kmphToMph() << endl;
-			loopEnder = true;
 			break;
 		case 5:
 			loopEnder = true;
@@ -108,4 +104,6 @@ int main() {
 	//conclusiton
 
 	cout << "\nThank you for using Nick's More Choice Convertor!\n\nHave a nice day :)\n\n";
+
+	return 0;
 }
