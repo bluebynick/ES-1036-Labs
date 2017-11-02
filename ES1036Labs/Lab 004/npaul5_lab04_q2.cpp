@@ -167,7 +167,7 @@ string sineFunction() {
 	while (errorCatcher == false) { //error catcher for the caculations
 
 		cin >> limit;
-		if ((limit > 14) || (limit <0)) {
+		if ((limit > 1100) || (limit <0)) {
 			cout << "\nPlease input a suitable calculation limit from 1 to 14\n";
 			errorCatcher = false;
 		}
