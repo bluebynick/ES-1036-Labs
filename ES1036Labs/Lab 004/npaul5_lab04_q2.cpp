@@ -56,7 +56,7 @@ int main() {
 			cout << sineFunction() << endl;
 			break;
 		case 3:
-			cout << "You're length in Inches is " << expFunction() << endl;
+			cout << expFunction() << endl;
 			break;
 		case 4:
 			cout << factorialFunction() << endl;
@@ -82,7 +82,7 @@ string powerFunction() {
 	string input = " ";
 	double base = 0.0;
 	double power = 0.0;
-	double result = 0.0;
+	double result = 1.0;
 	bool errorCatcher = false; 
 	bool baseWasNegative = false; //condition that will alter output dependant on if base was a negative input but not affect the calculations
 	bool powerWasNegative = false; //condition that will alter output dependant on if power was a negative input but not affect the calculations
@@ -123,11 +123,16 @@ string powerFunction() {
 	}
 
 	//calculations 
-	if (powerWasNegative ==false) {
-		result = pow((double)base, (double)power);
+	for (int j = power; j > 0; j--) { //this handles the second term on the top
+
+		result *= base;
+
 	}
-	else {
-		result = 1.0 / (pow((double)base, (double)power));
+	if (powerWasNegative ==false) {
+
+	}
+	else { //if it was a negative power
+		result = 1.0 / result;
 
 	}
 
@@ -136,7 +141,7 @@ string powerFunction() {
 		input = "\nThe result of (" + to_string(base*-1) + ") raised to the power of (" + to_string(power*-1) + ") is " + to_string(result);
 	}
 	else if ((baseWasNegative == false) && (powerWasNegative == true)) {
-		input = "\nThe result of " + to_string((int)base) + " raised to the power of (" + to_string((int)power*-1) + ") is " + to_string((int)result);
+		input = "\nThe result of " + to_string((int)base) + " raised to the power of (" + to_string((int)power*-1) + ") is " + to_string(result);
 	}
 	else if ((baseWasNegative == true) && (powerWasNegative == false)) {
 		input = "\nThe result of (" + to_string((int)base*-1) + ") raised to the power of " + to_string((int)power) + " is " + to_string((int)result);
@@ -205,7 +210,7 @@ string sineFunction() {
 
 		for (int j = twonPlusOne; j > 0; j--) { //this handles the second term on the top
 
-			angleResult = angleResult*inputAngle;
+			angleResult *= inputAngle;
 
 		}
 

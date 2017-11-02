@@ -21,9 +21,12 @@ int main() {
 	//variable declaration
 	bool loopEnder = false;
 	int input = 0;
+	int size = 0;
+	int rows = 0;
 	char inputChar = ' ';
 	bool inputBool = false;
-	int starsInRow[5];
+
+	int * starsInRow;
 
 
 	//introduction
@@ -36,72 +39,80 @@ int main() {
 
 		if (input == 1) { //this is the choice for the bottom left
 
-			cout << "\nBased on your choice of " << input << ", here is your triangle:\n";
+			cout << "\nBased on your choice of " << input << ", you chose bottom left shape.\n";
+			cout << "Enter the right triangle size : " << endl;
+			cin >> size;
+			starsInRow = new int[size];
+			cout << "The length of the longest side will be : " << size << endl;
+			rows = size+1;
 			
 			//creating the right number for the correct diagram
-			starsInRow[0] = 1;
-			starsInRow[1] = 2;
-			starsInRow[2] = 3;
-			starsInRow[3] = 4;
-			starsInRow[4] = 5;
+			for (int i = 0; i < size; i++) {
+				starsInRow[i] = i + 1;
+			}
 
 			//this calls the triangle method and sends it the appropriate amount of rows and the pattern
-			triangleCreation(4,starsInRow, false);
+			triangleCreation(rows,starsInRow, false);
 		}
 
 		else if (input == 2) { //this is the choice for the top left
 
-			cout << "\nBased on your choice of " << input << ", here is your triangle:\n";
+			cout << "\nBased on your choice of " << input << ", you chose top left shape.\n";
+			cout << "Enter the right triangle size : " << endl;
+			cin >> size;
+			starsInRow = new int[size];
+			cout << "The length of the longest side will be : " << size << endl;
+			rows = size+1;
 
 			//creating the right number for the correct diagram
-			starsInRow[0] = 5;
-			starsInRow[1] = 4;
-			starsInRow[2] = 3;
-			starsInRow[3] = 2;
-			starsInRow[4] = 1;
+			for (int i = size; i >0; i--) {
+				starsInRow[size-i] = i; //because the first time it'll be [5-5 =0] = 5, then [5-4=1] =4. nice logic!
+			}
 
 			//this calls the triangle method and sends it the appropriate amount of rows and the pattern
-			triangleCreation(4, starsInRow, false);
+			triangleCreation(rows, starsInRow, false);
 		}
 
 		else if (input == 3) { //this is the choice for the top right
 
-			cout << "\nBased on your choice of " << input << ", here is your triangle:\n";
+			cout << "\nBased on your choice of " << input << ", you chose top right shape.\n";
+			cout << "Enter the right triangle size : " << endl;
+			cin >> size;
+			starsInRow = new int[size];
+			cout << "The length of the longest side will be : " << size << endl;
+			rows = size+1;
 
 			//creating the right number for the correct diagram
-			starsInRow[0] = 5;
-			starsInRow[1] = 4;
-			starsInRow[2] = 3;
-			starsInRow[3] = 2;
-			starsInRow[4] = 1;
+			for (int i = size; i >0; i--) {
+				starsInRow[size - i] = i; // because the first time it'll be [5-5 =0] = 5, then [5-4=1] =4. nice logic!
+			}
 
 			//this calls the triangle method and sends it the appropriate amount of rows and the pattern
-			triangleCreation(4, starsInRow, true);
+			triangleCreation(rows, starsInRow, true);
 		}
 
 		else if (input == 4) { //this is the choice for the bottom right
 
-			cout << "\nBased on your choice of " << input << ", here is your triangle:\n";
+			cout << "\nBased on your choice of " << input << ", you chose bottom right shape.\n";
+			cout << "Enter the right triangle size : " << endl;
+			cin >> size;
+			starsInRow = new int[size];
+			cout << "The length of the longest side will be : " << size <<endl;
+			rows = size+1;
 
 			//creating the right number for the correct diagram
-			starsInRow[0] = 1;
-			starsInRow[1] = 2;
-			starsInRow[2] = 3;
-			starsInRow[3] = 4;
-			starsInRow[4] = 5;
+			for (int i = 0; i < size; i++) {
+				starsInRow[i] = i + 1;
+			}
 
 			//this calls the triangle method and sends it the appropriate amount of rows and the pattern
-			triangleCreation(4, starsInRow, true);
+			triangleCreation(rows, starsInRow, true);
 		}
 
 		else if (input == 5) { //this is the exit condition
 
 			cout << "\nBased on your choice of " << input << ", the program will exit.\n";
-			starsInRow[0] = 1;
-			starsInRow[1] = 2;
-			starsInRow[2] = 3;
-			starsInRow[3] = 4;
-			starsInRow[4] = 5;
+			starsInRow = new int[5];
 			inputBool = true;
 		}
 
@@ -120,12 +131,12 @@ int main() {
 
 void triangleCreation(int rows, int starsInRow[], bool flip) {
 
-	for (int i = 0; i <= rows; i++) { //number of rows
+	for (int i = 0; i < rows; i++) { //number of rows
 
 		int x = starsInRow[i];
 
 		if (flip == false) {
-			for (int j = 0; j <= 5; j++) { //stars per row
+			for (int j = 0; j <= rows; j++) { //stars per row
 				if (flip == false) {
 					if (j < x) {
 						cout << "*";
@@ -138,7 +149,7 @@ void triangleCreation(int rows, int starsInRow[], bool flip) {
 		}
 
 		else {
-			for (int j = 5; j > 0; j--) { //stars per row
+			for (int j =rows-1; j > 0; j--) { //stars per row
 				if (j <= x) {
 					cout << "*";
 				}
