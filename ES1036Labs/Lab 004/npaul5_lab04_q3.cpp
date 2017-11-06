@@ -9,6 +9,7 @@ Date: November 1st 2017
 
 
 Notes:
+-I dabbled in pointers in oder to create the array with a variable size. I don't exactly know how it works, only that it does
 
 */
 
