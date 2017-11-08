@@ -146,6 +146,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="npaul5_lab04_q1.cpp" />
+    <ClCompile Include="npaul5_lab04_q2.cpp" />
     <ClCompile Include="npaul5_lab04_q3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

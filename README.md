@@ -17,3 +17,7 @@ In lab 004 Q3:
 
 In lab 005 Q1:
 -I used isalpha() correrctly in this code
+
+In lab 005 Q2:
+-I used the time library and makes use of rudementary pointers in order to get current date and time
+-I used a warning disable thing #pragma warning(disable : 4996)
