@@ -22,6 +22,7 @@ Features:
 -Uses method calls based on teacher prototypes and makes use of Switch structure to handle the program direction
 -Uses a do while loop for error catching (my first do-While loop yeeek)
 -uses the time library and makes use of rudementary pointers in order to get current date and time
+-> https://www.tutorialspoint.com/cplusplus/cpp_date_time.htm (for tutorial on the time library)
 -uses a warning disable thing #pragma warning(disable : 4996)
 */
 

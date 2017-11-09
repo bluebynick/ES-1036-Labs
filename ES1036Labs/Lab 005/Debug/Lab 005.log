@@ -1,7 +1,16 @@
-﻿  npaul5_lab05_q2.cpp
-c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q2.cpp(37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q2.cpp(42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q2.cpp(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q2.cpp(101): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+﻿  npaul5_lab05_q3.cpp
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(114): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(117): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(123): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(165): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(207): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(225): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(228): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(289): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(318): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(320): warning C4244: '*=': conversion from 'double' to 'long', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(333): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\user\desktop\github\es-1036-labs\es1036labs\lab 005\npaul5_lab05_q3.cpp(357): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
   Lab 005.vcxproj -> C:\Users\USER\Desktop\GitHub\ES-1036-Labs\ES1036Labs\Debug\Lab 005.exe
   Lab 005.vcxproj -> C:\Users\USER\Desktop\GitHub\ES-1036-Labs\ES1036Labs\Debug\Lab 005.pdb (Full PDB)
