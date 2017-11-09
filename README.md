@@ -21,3 +21,4 @@ In lab 005 Q1:
 In lab 005 Q2:
 -I used the time library and makes use of rudementary pointers in order to get current date and time
 -I used a warning disable thing #pragma warning(disable : 4996)
+-I used a nested switch statement in do while loop in a neat way where one of the cases just ends the code and the loop is actually infite until it meets that condition
