@@ -24,6 +24,7 @@ Features:
 -uses the time library and makes use of rudementary pointers in order to get current date and time
 -> https://www.tutorialspoint.com/cplusplus/cpp_date_time.htm (for tutorial on the time library)
 -uses a warning disable thing #pragma warning(disable : 4996)
+-I used a nested switch statement in do while loop in a neat way where one of the cases just ends the code and the loop is actually infite until it meets that condition
 */
 
 using namespace std;
@@ -53,37 +54,42 @@ int main() {
 	cout << "Hi! Welcome to Nick's More Choice Convertor 2.0! In this program we will convert \nCelsius into Fahrenheit, Centimeters to Inches, Meters to Feet, or Km/h toMPH. \nYou will be asked for an input at the beginning that will indicate your choice.\n";
 
 	double input = 0;
-	switch (displayMenu()) {
-	case 1:
-		cout << "\nPlease input a temperature in Celsius:\n";
-		cin >> input;
-		cout << "You're temperature in Farenheit is " << computeCelsiusConversion(input) << endl;
-		break;
-	case 2:
-		cout << "\nPlease input a length in Cm:\n";
-		cin >> input;
-		cout << "You're length in Inches is " << computeCentimetersConversion(input) << endl;
-		break;
-	case 3:
-		cout << "\nPlease input a length in m:\n";
-		cin >> input;
-		cout << "You're length in Inches is " << computeMetersConversion(input) << endl;
-		break;
-	case 4:
-		cout << "\nPlease input a speed in Km/h:\n";
-		cin >> input;
-		cout << "You're speed in MPH is " << computeKilometersPerHourConversion(input) << endl;
-		break;
-	case 5:
-		break;
-	}
+	do {
+		switch (displayMenu()) {
+		case 1:
+			cout << "\nPlease input a temperature in Celsius:\n";
+			cin >> input;
+			cout << "You're temperature in Farenheit is " << computeCelsiusConversion(input) << endl;
+			break;
+		case 2:
+			cout << "\nPlease input a length in Cm:\n";
+			cin >> input;
+			cout << "You're length in Inches is " << computeCentimetersConversion(input) << endl;
+			break;
+		case 3:
+			cout << "\nPlease input a length in m:\n";
+			cin >> input;
+			cout << "You're length in Inches is " << computeMetersConversion(input) << endl;
+			break;
+		case 4:
+			cout << "\nPlease input a speed in Km/h:\n";
+			cin >> input;
+			cout << "You're speed in MPH is " << computeKilometersPerHourConversion(input) << endl;
+			break; //this only breaks the switch
+		case 5:
+			printFooter(); 
+			return 0;  //this just ends it if i get to this conidtion
+
+		}
+	} while (1); //infite loop
+}
 
 	//conclusiton
-	printFooter();
-	return 0;
+	//printFooter();
+	//return 0;
 
 	
-}
+
 
 
 void printHeader(string name, int lab, string date, int question) {

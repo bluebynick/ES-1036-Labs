@@ -18,6 +18,7 @@ Notes:
 -made use of the continue keyword
 -made use of prototypes (function declarations before initializations so they can be written after the main
 -the sine function stops working past 6?
+-the exponential function slowly loses accuracy the higher the value you input
 -uses the time library and makes use of rudementary pointers in order to get current date and time
 -> https://www.tutorialspoint.com/cplusplus/cpp_date_time.htm (for tutorial on the time library)
 -uses a warning disable thing #pragma warning(disable : 4996)
@@ -30,7 +31,7 @@ char displayMenu();
 double computePower(double base, int exponent);
 double computeSine(double radians, int numberOfIterations);
 double computeExponential(double exponential, int numberOfIterations);
-double computeFactorial(int number);void printFooter();
+double computeFactorial(int number);double computeSquareRoot(double number);void printFooter();
 int assignment(char inputChar);
 
 int main() {
@@ -98,7 +99,7 @@ int main() {
 				if (cin.good()) { //if the input is a nummber
 					errorCatcher = true; //run the exit condition
 
-					if (power < 0) { //make this for output sake
+					if (power < 0) { 
 						powerWasNegative = true;
 					}
 				}
@@ -231,9 +232,35 @@ int main() {
 				break;
 				
 			case 5:
+				cout << "\nYou've selected the Square Root Function. Please input the positive number to \nwhich we will take the square root:\n";
+				while (errorCatcher == false) {
+					cin >> base;
+
+					if (cin.good()) { //if the input is a nummber
+
+						if (base > 0) { //if it's  positive
+							errorCatcher = true; //run the exit condition
+						}
+						else {
+							cout << "\nPlease input a postitive integer number:\n ";
+						}
+					}
+					else {
+						cin.clear(); //this flushes out the input so it can be checked if it's an int again. otherwise it will just give \n characters that aren't ints indefinitely
+						cin.ignore(INT_MAX, '\n');
+					}
+
+				}
+
+				//ouput 
+				cout<< "\nThe square root of " << base << " is " <<computeSquareRoot(base) << endl;
+
+				//so it won't exit the loop
+				break;
+
+			case 6:
 				loopEnder = true;
 				break;
-				
 		}
 	} while (loopEnder == false);
 
@@ -259,12 +286,12 @@ char displayMenu() {
 	bool loopEnder = false;
 	do {
 		//program direction
-		cout << "\n\nInput an letter choice(a-e):\n\nThe options are:\n\n\ta. Power Function\n\tb. Sine Function\n\tc. Exponential Function\n\td. Factorial Function\n\te. Exit\n\n";
+		cout << "\n\nInput an letter choice(a-e):\n\nThe options are:\n\n\ta. Power Function\n\tb. Sine Function\n\tc. Exponential Function\n\td. Factorial Function\n\te. Square Root Function\n\tf. Exit\n\n";
 		cin >> inputChar;
 
 		//method assining the correct value to make the switch work
 		if (isdigit(inputChar)) {
-			cout<< "\nPlease input an acceptable letter a,b,c,d or e";
+			cout<< "\nPlease input an acceptable letter a,b,c,d,e or f";
 			continue; //skip the rest of the iteration
 		}
 		loopEnder = true;
@@ -315,19 +342,13 @@ double computeSine(double radians, int numberOfIterations) {
 		long angleResult = 1;
 		counter += 1;
 
-		for (int j = twonPlusOne; j > 0; j--) { //this handles the second term on the top
-
-			angleResult *= radians;
-
-		}
-
 		long long numerator;
 
 		if (counter % 2) { //if the counter %2 = a non zero this returns true aka every odd number in the sequence is positive
-			numerator = angleResult * 1;
+			numerator = computePower(angleResult, twonPlusOne) * 1;
 		}
 		else {
-			numerator = angleResult * -1;
+			numerator = computePower(angleResult, twonPlusOne) * -1;
 		}
 
 		long double denominator = computeFactorial(twonPlusOne);
@@ -347,19 +368,9 @@ double computeExponential(double exponential, int numberOfIterations) {
 	int counter = 0;
 	double result = 0.0;
 
-	for (int i = numberOfIterations; i >= 0; i--) {
+	for (int i = 0; i <= numberOfIterations; i++) {
 
-		long intResult = 1;
-		counter += 1;
-
-		for (int j = i; j > 0; j--) { //this handles the second term on the top
-
-			intResult = intResult*exponential;
-
-		}
-
-		long double numerator = intResult * 1;
-
+		long double numerator = computePower(exponential,i);
 
 		long double denominator = computeFactorial(i);
 
@@ -384,6 +395,15 @@ double computeFactorial(int number) {
 }
 
 return factorialResult;
+}
+
+double computeSquareRoot(double number) {
+	double errorMargin = 0.00001;
+	double calculation = number; //this is the value of "next guess"
+	while ((calculation - number/calculation) > errorMargin) { // this checks if "next guess" is equal to "number/last guess" to an acceptable error margin  (number/last guess being the formula for a square root since last guess is computed in the formula below)
+		calculation = (number/ calculation + calculation)/2; //this is the formula we were given
+	}
+	return calculation;
 }
 
 void printFooter() {
@@ -411,6 +431,10 @@ int assignment(char inputChar) {
 
 	else if ((inputChar == 'e') || (inputChar == 'E')) {
 		charAsNumber = 5;
+	}
+
+	else if ((inputChar == 'f') || (inputChar == 'F')) {
+		charAsNumber = 6;
 	}
 
 	else {

@@ -18,6 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="npaul5_lab05_q1.cpp" />
+    <ClCompile Include="npaul5_lab05_q2.cpp" />
+    <ClCompile Include="npaul5_lab05_q3.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EA6A67ED-3471-45B3-95AD-34A7F2A0D248}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -145,9 +150,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="npaul5_lab05_q3.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
