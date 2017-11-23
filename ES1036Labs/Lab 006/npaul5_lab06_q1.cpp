@@ -45,8 +45,11 @@ int main() {
 			cout << "\nHow many dice would you like to roll (0, 1 or 2)?" << endl; //question
 			cin >> diceRolled; //input
 			if (cin.good()) { //validation of numericy of input
-				if ((diceRolled >= 0) && (diceRolled <=2)) { //validation of value of input
+				if ((diceRolled >= 1) && (diceRolled <=2)) { //validation of value of input
 					break;
+				}
+				else if ((diceRolled == 0)) {
+					exit(EXIT_FAILURE);
 				}
 				else {
 					cout << "\nPlease input an acceptable integer 0, 1 or 2" << endl;

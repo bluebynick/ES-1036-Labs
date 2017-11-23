@@ -19,8 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="npaul5_lab06_q1.cpp" />
-    <ClCompile Include="npaul5_lab06_q2.cpp" />
     <ClCompile Include="npaul5_lab06_q3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

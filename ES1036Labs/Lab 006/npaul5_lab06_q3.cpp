@@ -63,9 +63,6 @@ int main() {
 			}
 			break;
 		}
-		else {
-			cout << "\nPlease input an acceptable number 1 or 2\n";
-		}
 	}
 
 
@@ -109,7 +106,7 @@ void printFooter() {
 	cout << "\nThank you for using Nick's final grade calculator 3.0!\n\nHave a nice day :)\n\n";
 }
 int displayMenu() {
-	int input = 1;
+	int input = 0;
 	while (true) {
 		//program direction
 		cout << "\n\nInput an number choice(1 or 2):\n\nThe options are:\n\n\t1. Sort Ascending\n\t2. Sort Descending\n\n";
@@ -122,10 +119,14 @@ int displayMenu() {
 			}
 			else {
 				cout << "\nPlease input an acceptable number 1 or 2";
+				cin.clear();
+				cin.ignore();
 			}
 		}
 		else {
 			cout << "\nPlease input an acceptable number 1 or 2";
+			cin.clear();
+			cin.ignore();
 		}
 	}
 
