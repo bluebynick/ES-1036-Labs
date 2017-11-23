@@ -29,8 +29,8 @@ int unsortedArray[10];
 int main() {
 	//introduction
 	header();
-	\
-		cout << "Please input your 10 numbers for the array:\n";
+
+	cout << "Please input your 10 numbers for the array:\n";
 	//input of array indices
 	for (int i = 0; i < 10; i++) {
 		while (true) { //while the error catcher is false
