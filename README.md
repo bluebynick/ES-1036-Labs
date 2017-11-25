@@ -25,3 +25,8 @@ In lab 005 Q2:
 
 In lab 006 Q1:
 -I used a very efficient while(true) structure
+
+In lab 007 Q1:
+-I modified my methods from lab 005 Q2 and made them more efficient
+-I used of a bubble sort with full explanation in comments of the code 
+-I sucessfully use of dynamic memory allocation in order to "change the size of an array" which I fully explained in the notes folder (c)

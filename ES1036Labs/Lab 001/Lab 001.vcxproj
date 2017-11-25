@@ -20,6 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="npaul5_lab01_level3_a.cpp" />
+    <ClCompile Include="npaul5_lab01_q1.cpp" />
+    <ClCompile Include="npaul5_lab01_q2.cpp" />
+    <ClCompile Include="npaul5_lab01_q3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F1BBBCD4-A020-4031-B863-19149553ED9A}</ProjectGuid>

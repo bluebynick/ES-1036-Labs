@@ -18,5 +18,14 @@
     <ClCompile Include="npaul5_lab01_level3_a.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="npaul5_lab01_q1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="npaul5_lab01_q2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="npaul5_lab01_q3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

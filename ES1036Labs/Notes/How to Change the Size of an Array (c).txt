@@ -1,0 +1,8 @@
+In lab 007 Q1:
+I sucessfully use of dynamic memory allocation in order to "change the size of an array" when in essence what i'm really doing is:
+	1. Creating a temporary array and using loops to populate it with the same values as the old array
+	2. Deleting the old array through dynamic memory allocation
+	3. Increasing the size of the array variable (by one in this case)
+	4. Creating a new array of the same name (b/c the old one's storage was released thus the name can be reused) with a size of the new size variable (up by one here)
+	5. Populating the new array with the same values as the temporary array using loops (thus leaving the 1 extra new space unoccupied)
+	6. Deleting the temporary array

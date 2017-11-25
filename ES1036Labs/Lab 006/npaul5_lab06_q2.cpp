@@ -14,7 +14,7 @@ This program makes heavy use of arrays for data storage and of while loops for e
 This was modified formatically to match the format given.
 
 Notes:
--used my methods from lab05_q2
+-used my header and footer methods from lab06_q1
 -makes use of a very clever error catching sequence to error catch based on the sum. In if (counter >= 3).
 */
 

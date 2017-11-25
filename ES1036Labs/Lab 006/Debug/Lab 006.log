@@ -1,3 +1,9 @@
-﻿  npaul5_lab06_q3.cpp
-  Lab 006.vcxproj -> C:\Users\USER\Desktop\GitHub\ES-1036-Labs\ES1036Labs\Debug\Lab 006.exe
-  Lab 006.vcxproj -> C:\Users\USER\Desktop\GitHub\ES-1036-Labs\ES1036Labs\Debug\Lab 006.pdb (Full PDB)
+﻿npaul5_lab06_q2.obj : error LNK2005: "void __cdecl header(void)" (?header@@YAXXZ) already defined in npaul5_lab06_q1.obj
+npaul5_lab06_q2.obj : error LNK2005: "void __cdecl printFooter(void)" (?printFooter@@YAXXZ) already defined in npaul5_lab06_q1.obj
+npaul5_lab06_q2.obj : error LNK2005: "void __cdecl printHeader(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)" (?printHeader@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H0H@Z) already defined in npaul5_lab06_q1.obj
+npaul5_lab06_q2.obj : error LNK2005: _main already defined in npaul5_lab06_q1.obj
+npaul5_lab06_q3.obj : error LNK2005: "void __cdecl header(void)" (?header@@YAXXZ) already defined in npaul5_lab06_q1.obj
+npaul5_lab06_q3.obj : error LNK2005: "void __cdecl printFooter(void)" (?printFooter@@YAXXZ) already defined in npaul5_lab06_q1.obj
+npaul5_lab06_q3.obj : error LNK2005: "void __cdecl printHeader(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)" (?printHeader@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H0H@Z) already defined in npaul5_lab06_q1.obj
+npaul5_lab06_q3.obj : error LNK2005: _main already defined in npaul5_lab06_q1.obj
+C:\Users\USER\Desktop\GitHub\ES-1036-Labs\ES1036Labs\Debug\Lab 006.exe : fatal error LNK1169: one or more multiply defined symbols found

@@ -11,7 +11,7 @@ Date: November 21st 2017
 In this program we will sort an array of number you put in based upon whether you want them ascending or descending
 
 Notes:
--used my methods from lab05_q2
+-used my header and footer methods from lab06_q1
 */
 
 using namespace std;
@@ -103,7 +103,7 @@ void printHeader(string name, int lab, string date, int question) {
 	cout << "Hi! Welcome to Nick's Array Sorter!\n\nIn this program we will sort an array of number you put in based \nupon whether you want them ascending or descending\n\n";
 }
 void printFooter() {
-	cout << "\nThank you for using Nick's final grade calculator 3.0!\n\nHave a nice day :)\n\n";
+	cout << "\nThank you for using Nick's Array Sorter!\n\nHave a nice day :)\n\n";
 }
 int displayMenu() {
 	int input = 0;

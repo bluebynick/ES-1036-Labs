@@ -10,8 +10,9 @@ Date: November 21st 2017
 I made a dice game
 
 Notes:
--used my methods from lab05_q2
+-modified my methods from lab05_q2
 -used cin.good() and some pretty damn efficient while loop structures
+-made use of an exit condition
 */
 
 using namespace std;
