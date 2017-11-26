@@ -30,3 +30,9 @@ In lab 007 Q1:
 -I modified my methods from lab 005 Q2 and made them more efficient
 -I used of a bubble sort with full explanation in comments of the code 
 -I sucessfully use of dynamic memory allocation in order to "change the size of an array" which I fully explained in the notes folder (c)
+-I completely java doc commented it
+
+In lab 007 Q2:
+-I used my methods from lab06_q1
+-26 line main method. Very efficient modular programming structures
+-I used a very unique system of getting values from strings based on what should be in the given ranking system
