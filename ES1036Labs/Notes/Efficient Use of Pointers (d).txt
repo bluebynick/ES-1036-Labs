@@ -1,4 +1,4 @@
-I used pointers in a really great, efficient way to only require one loop structure, but changing the variable being computed within. This eliminates the need for a second loop for a second variable. This was done in the while loop in the main. I did this by:
+I used pointers in a really great, efficient way to only require one loop structure, but changing the variable being computed within. This eliminates the need for a second loop for a second variable. This was done in the while loop in the main of lab 007 Q2. I did this by:
 	1. Declaring a pointer and making it equal to the first variable
 	2. Running the loop and using a comparison within to the dereference of the pointer
 	3. After the loop has run a second time, make the pointer point to the second variable
