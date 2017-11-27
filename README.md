@@ -36,3 +36,8 @@ In lab 007 Q2:
 -I used my methods from lab06_q1
 -26 line main method. Very efficient modular programming structures
 -I used a very unique system of getting values from strings based on what should be in the given ranking system
+
+In lab 007 Q3:
+-I used my methods from lab06_q1
+-I used pointer passing in function calls
+-I used pointers in a really great, efficient way to only require one loop structure, but changing the variable being computed within. This eliminates the need for a second loop for a second variable. I explained it fully in the notes folder in (d)
